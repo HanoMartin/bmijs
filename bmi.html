@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="style.css">
+<title>BMI</title>
+</head>
+<body>
+    <main class="container">
+        <header class="row">
+            <div class="col-12">
+                <h1 class="text-center text-primary">Testtömegindex</h1>
+            </div>
+            <section class="row">
+                <form class="col-12 bg-light">
+                    <fieldset class="row">
+                        <legend>Adatok</legend>
+                        <div class="col-md-6">
+                            <div class="input-group mb-3">
+                                <label for="magassag" class="form-label"></label>
+                                <span class="input-group-text">Magasság</span>
+                                <input type="number" id="magassag" class="form-control" min="0" max="500">
+                                <span class="input-group-text">cm</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="input-group mb-3">
+                                <label for="suly" class="form-label"></label>
+                                <span class="input-group-text">Testsúly</span>
+                                <input type="number" id="suly" class="form-control" min="0" max="500">
+                                <span class="input-group-text">kg</span>  
+                            </div>
+                        </div>
+                    </fieldset>
+                    <input type="button" value="BMI számitás" class="btn btn-secondary mb-3" onclick="Szamol()">
+                </form>
+                <div class="col-12">
+                    <h2>Eredmény</h2>
+                    <p>Testütemindex: <span id="kiir"></span></p>
+                </div>
+            </section>
+        </header>
+    </main>
+<script src="testomeg.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+</html>
